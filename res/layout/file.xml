@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/file"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="@color/transparent">
+	    <ImageButton
+	        android:contentDescription="@string/mode_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/grid"
+	        android:padding="8dp"
+	        android:background="@color/transparent" />
+	    <TextView
+	        android:id="@+id/fol" 
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="@string/folder"
+	        android:textSize="20sp"
+	        android:padding="8dp"
+	        android:textColor="@color/white"/>	  
+	</LinearLayout>
+    <TextView 
+	    android:id="@+id/f_refresh"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/refresh_txt"
+	    android:textSize="16sp"
+	    android:textColor="@color/white"
+	    android:gravity="center"
+	    android:visibility="gone" />
+   <ListView
+		    android:id="@+id/file_list"
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="1"
+		    android:scrollbars="none"
+		    android:listSelector="@null"
+		    android:visibility="gone"
+		    android:background="@color/gray" />
+</LinearLayout>

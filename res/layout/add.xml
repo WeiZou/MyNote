@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    tools:context=".Main" >
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="@color/transparent">
+	    <ImageButton
+	        android:id="@+id/back_btn"
+	        android:contentDescription="@string/back_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/back"
+	        android:padding="8dp"
+	        android:background="@color/transparent" />
+	    <TextView
+	        android:id="@+id/title_add" 
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="@string/new_note"
+	        android:textSize="20sp"
+	        android:padding="8dp"
+	        android:textColor="@color/white"/>
+	    <ImageButton
+	        android:contentDescription="@string/save_btn"
+	        android:id="@+id/save_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/save"
+	        android:padding="8dp"
+	        android:background="@color/transparent"  />
+	</LinearLayout>
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="@color/transparent">
+		<EditText
+		    android:id="@+id/title_txt"
+		    android:inputType="text" 
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="1"
+		    android:gravity="center"
+		    android:singleLine="true"
+		    android:padding="8dp"
+		    android:textSize="18sp"
+		    android:textColor="@color/transparent"
+		    android:hint="@string/title_hint"
+		    android:textColorHint="@color/darkgray"
+		    android:background="@color/white" />
+	</LinearLayout>
+		<EditText
+		    android:id="@+id/note_txt"
+		    android:inputType="textMultiLine"
+		    android:layout_width="match_parent"
+		   	android:layout_height="0dp"
+		   	android:layout_weight="1"
+		   	android:gravity="left|top"
+		    android:padding="8dp"
+		    android:textSize="18sp"
+		    android:textColor="@color/transparent"
+		    android:hint="@string/content_hint"
+		    android:textColorHint="@color/darkgray"
+		    android:background="@color/white" />
+</LinearLayout>
